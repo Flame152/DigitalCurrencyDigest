@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>DigitalCurrencyDigest</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230714172749">
+	<link rel="shortcut icon" href="img/logo/logo.svg">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- preloader-style -->
+	<style>
+		#preloader-site {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(44, 44, 44, 0.973);
+			z-index: 1001;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.loading-preloader {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-weight: 600;
+			letter-spacing: 2px;
+			font-size: 30px;
+			color: #00ffdd;
+			opacity: 999;
+			z-index: 1000;
+		}
+
+		.icon-preloader {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 270px;
+			height: 270px;
+			border: 13px solid #00d9ff;
+			border-top: transparent;
+			border-left-color: transparent;
+			border-radius: 50%;
+			z-index: 1;
+			transform: translate(-50%, -50%);
+			animation: iconpreloader 0.9s linear infinite;
+		}
+
+		@keyframes iconpreloader {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- preloader -->
+	<div id="preloader-site">
+		<div class="loading-preloader">Загрузка...</div>
+		<div class="icon-preloader"></div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<a href="#" target="_blank" class="logo">
+						<div class="logo__image">
+							<img src="img/logo/logo.svg" alt="logo">
+						</div>
+						<div class="logo__name"><span>Digital</span><span>Currency</span><span>Digest</span></div>
+					</a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">Latest news</a></li>
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">Video</a></li>
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">Bitcoin</a></li>
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">NFT</a></li>
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">Blockchain</a></li>
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">Mining</a></li>
+								<li class="menu__item"><a href="#" target="_blank" class="menu__link">More</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<!-- banner -->
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__row">
+						<div class="banner__text">
+							<div class="banner__title">
+								<h2>Unlock the power of real-time transaction tracking.</h2>
+							</div>
+							<div class="banner__paragraph">
+								<p>Our Telegram bot keeps you in control of your crypto investments like never before.</p>
+							</div>
+						</div>
+						<div class="banner__image">
+							<picture><source srcset="img/banner/robot.webp" type="image/webp"><img src="img/banner/robot.jpg" alt="robot"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- content-aside -->
+			<div class="content-aside">
+				<!-- aside -->
+				<aside class="aside">
+					<div class="aside__container">
+						<div class="aside__download">
+							<div class="aside__paragraph">
+								<p>Download the <span>DigitalCurrencyDigest</span> app and get news about crypto and blockchain
+									from various sources:</p>
+							</div>
+							<div class="aside__button">
+								<button class="aside__google-play">Google play</button>
+								<button class="aside__app-store">App Store</button>
+							</div>
+						</div>
+						<div class="cryptoblogs">
+							<div class="cryptoblogs__title">Топ криптоблогов</div>
+							<ul class="cryptoblogs__blogs">
+								<li class="cryptoblogs__blog">
+									<picture><source srcset="img/aside/photo3.webp" type="image/webp"><img class="cryptoblogs__image" src="img/aside/photo3.jpg" alt="photo" loading="lazy"></picture>
+									<div class="cryptoblogs__body">
+										<div class="cryptoblogs__skills">Crypto Insights</div>
+										<div class="cryptoblogs__name">Александр Астоев</div>
+									</div>
+								</li>
+								<li class="cryptoblogs__blog">
+									<picture><source srcset="img/aside/photo2.webp" type="image/webp"><img class="cryptoblogs__image" src="img/aside/photo2.jpg" alt="photo" loading="lazy"></picture>
+									<div class="cryptoblogs__body">
+										<div class="cryptoblogs__skills">CoinSavvy</div>
+										<div class="cryptoblogs__name">Владимир Coin</div>
+									</div>
+								</li>
+								<li class="cryptoblogs__blog">
+									<picture><source srcset="img/aside/photo3.webp" type="image/webp"><img class="cryptoblogs__image" src="img/aside/photo3.jpg" alt="photo" loading="lazy"></picture>
+									<div class="cryptoblogs__body">
+										<div class="cryptoblogs__skills">Digital Wealth Chronicl</div>
+										<div class="cryptoblogs__name">Василий Калев</div>
+									</div>
+								</li>
+								<li class="cryptoblogs__blog">
+									<picture><source srcset="img/aside/photo4.webp" type="image/webp"><img class="cryptoblogs__image" src="img/aside/photo4.jpg" alt="photo" loading="lazy"></picture>
+									<div class="cryptoblogs__body">
+										<div class="cryptoblogs__skills">Blockchain Beacon</div>
+										<div class="cryptoblogs__name">Олег Опаренко</div>
+									</div>
+								</li>
+								<li class="cryptoblogs__blog">
+									<picture><source srcset="img/aside/photo5.webp" type="image/webp"><img class="cryptoblogs__image" src="img/aside/photo5.jpg" alt="photo" loading="lazy"></picture>
+									<div class="cryptoblogs__body">
+										<div class="cryptoblogs__skills">CryptoVerse Digest</div>
+										<div class="cryptoblogs__name">Влад Один</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<!-- line -->
+				<div class="line"></div>
+				<!-- content -->
+				<div class="content">
+					<!-- info -->
+					<section class="info">
+						<div class="info__container">
+							<div class="info__title">
+								<h1>Лучший телеграмм-бот для отслеживания транзакций криптовалют в 2023 году</h1>
+							</div>
+							<div class="info__row">
+								<div class="info__left">
+									<div class="info__text-logo text-logo-info">
+										<img class="text-logo-info__logo" src="img/logo/logo.svg" alt="logo" loading="lazy">
+										<div class="text-logo-info__top">
+											<div class="text-logo-info__title title-info">Автор</div>
+											<div class="text-logo-info__name name-info">Редакция DigitalCurrencyDigest</div>
+										</div>
+									</div>
+									<div class="info__bottom text-left-info">
+										<div class="text-left-info__update title-info">Обновлено</div>
+										<div class="text-left-info__date">23 июня, 2023</div>
+									</div>
+								</div>
+								<div class="info__right">
+									<picture><source srcset="img/info/photo.webp" type="image/webp"><img class="info__photo" src="img/info/photo.jpg" alt="photo" loading="lazy"></picture>
+									<div class="info__text-right text-right-info">
+										<div class="text-right-info__title title-info">Проверено экспертом</div>
+										<div class="text-right-info__name name-info">Кириллом Железняком</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- transactions -->
+					<section class="transactions">
+						<div class="transactions__container">
+							<div class="transactions__bot">
+								<div class="transactions__title-subtitle title-subtitle">
+									<div class="title-subtitle__title">
+										<h3>ТРАНЗАКЦИИ В TELEGRAM</h3>
+									</div>
+									<div class="title-subtitle__subtitle"><span>Основная задача:</span> Сделать удобным отслеживание транзакций на крипто-кошельке.</div>
+								</div>
+								<div class="transactions__image">
+									<picture><source srcset="img/transactions/transactions_image.webp" type="image/webp"><img src="img/transactions/transactions_image.jpg" alt="transactions" loading="lazy"></picture>
+								</div>
+								<a href="https://t.me/CoinsFlowBot" target="_blank" class="transactions__button button">ПЕРЕЙТИ К БОТУ</a>
+							</div>
+							<div class="transactions__paragraph paragraph">
+								<p><a href="https://t.me/CoinsFlowBot" class="paragraph__link" target="_blank">@CoinsFlowBot</a> это платформа на основе искусственного интеллекта в телеграмме, которая упрощает работу продавцов и покупателей, и помогает отслеживать все передвижение виртуальной валюты в сети. Вам больше не нужно нанимать посредников или тратить время на отслеживание транзакций - умная система сделает все за вас.<a href="https://t.me/CoinsFlowBot" class="paragraph__link" target="_blank">@CoinsFlowBot</a> создан для того, чтобы отслеживать входящие и исходящие платежи по заданному виртуальному крипто кошельку, без участия трейдера.</p>
+								<p>Данный бот выступает гарантом честности и работает с USDT TRC20, в дальнейшем планируется добавление и других токенов. Чат-бот организует более простую и безопасную работу с криптовалютой и помогает отслеживать все платежи в одном месте.</p>
+							</div>
+						</div>
+					</section>
+					<!-- without-risks -->
+					<section class="without-risks">
+						<div class="without-risks__container">
+							<div class="without-risks__title-subtitle">
+								<div class="title-subtitle">
+									<div class="title-subtitle__title">
+										<h3>Никаких рисков и вложений</h3>
+									</div>
+									<div class="title-subtitle__subtitle"><span>Приветственный бонус для новых пользователей <a href="https://t.me/CoinsFlowBot" target="_blank" class="title-subtitle__link">@CoinsFlowBot</a>!</span> Начните прямо сейчас и получите <span>5 ДНЕЙ ТРИАЛА БЕСПЛАТНО.</span></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- work -->
+					<section class="work">
+						<div class="work__container">
+							<div class="work__title title">
+								<h4>Как работает чат-бот?</h4>
+							</div>
+							<div class="work__paragraph paragraph">
+								<p>Чтобы упростить жизнь крипто-инвесторам, сами трейдеры решили создать Телеграмм бот, через который можно легко следить за операциями на своем крипто-кошельке и тратить на это 5 минут в день. Долгое время, для того, чтобы получить информацию о состоянии своего кошелька, нужно было заходить в отдельное приложение, контролитровать историю платежей и волноваться о получении каждого перевода.</p>
+								<p>Цель <a href="https://t.me/CoinsFlowBot" class="paragraph__link" target="_blank">@CoinsFlowBot</a> сделать отслеживание транзакций по крипто кошельку максимально удобной для любых пользователей.</p>
+							</div>
+						</div>
+					</section>
+					<!-- possibilities -->
+					<section class="possibilities">
+						<div class="possibilities__container">
+							<div class="possibilities__title title">
+								<h4>Если вы хотите?</h4>
+							</div>
+							<ul class="possibilities__list">
+								<li class="possibilities__item">видеть всю историю операций по крипто кошельку</li>
+								<li class="possibilities__item">отслеживать Вх/Исх транзакции в режиме реального времени</li>
+								<li class="possibilities__item">подключать чат-бота в группы с другими людьми в телеграмме</li>
+								<li class="possibilities__item">удобно пополнять свой баланс криптой</li>
+							</ul>
+						</div>
+					</section>
+					<!-- stack -->
+					<section class="stack">
+						<div class="stack__container">
+							<div class="stack__title title">
+								<h4>Технический стек</h4>
+							</div>
+							<div class="stack__row">
+								<div class="stack__company">
+									<picture><source srcset="img/company/amazon.webp" type="image/webp"><img src="img/company/amazon.png" alt="company" loading="lazy"></picture>
+								</div>
+								<div class="stack__company">
+									<picture><source srcset="img/company/kubernetes.webp" type="image/webp"><img src="img/company/kubernetes.png" alt="company" loading="lazy"></picture>
+								</div>
+								<div class="stack__company">
+									<picture><source srcset="img/company/postresql.webp" type="image/webp"><img src="img/company/postresql.png" alt="company" loading="lazy"></picture>
+								</div>
+								<div class="stack__company">
+									<picture><source srcset="img/company//net.webp" type="image/webp"><img src="img/company//net.png" alt="company" loading="lazy"></picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- advantages -->
+					<section class="advantages">
+						<div class="advantages__container">
+							<div class="advantages__title title">
+								<h4>Преимущества</h4>
+							</div>
+							<div class="advantages__row">
+								<div class="advantages__card">
+									<div class="advantages__img">
+										<img src="img/advantages/chart.svg" alt="icon" loading="lazy">
+									</div>
+									<div class="advantages__body">
+										<div class="advantages__title">Быстрое уведомление о <br> транзакциях</div>
+										<div class="advantages__text">
+											<p>Чат-бот оперативно присылает уведомления, и автоматически отслеживает транзакции на вашем кошельке каждые несколько секунд. Это позволяет мгновенно присылать сообщение о любой активности с вашей виртуальной валютой.</p>
+										</div>
+									</div>
+								</div>
+								<div class="advantages__card">
+									<div class="advantages__img">
+										<img src="img/advantages/rocket_moon.svg" alt="icon" loading="lazy">
+									</div>
+									<div class="advantages__body">
+										<div class="advantages__title">5 дней бесплатного <br> использования</div>
+										<div class="advantages__text">
+											<p>Для того, чтобы вы смогли оценить работу чат-бота изнутри системы, мы запустили 5-дневный пробный период. Это поможет пользователям не только влюбиться в систему, но и сильно упростит работу как отдельного трейдера, так и овнера команды</p>
+										</div>
+									</div>
+								</div>
+								<div class="advantages__card">
+									<div class="advantages__img">
+										<img src="img/advantages/token_save.svg" alt="icon" loading="lazy">
+									</div>
+									<div class="advantages__body">
+										<div class="advantages__title">Информация о балансе</div>
+										<div class="advantages__text">
+											<p>В любой момент вы можете запросить актуальную информацию о количестве валюты на кошельке.</p>
+										</div>
+									</div>
+								</div>
+								<div class="advantages__card">
+									<div class="advantages__img">
+										<img src="img/advantages/computer_people.svg" alt="icon" loading="lazy">
+									</div>
+									<div class="advantages__body">
+										<div class="advantages__title">Упрощенная работа с <br> финансами</div>
+										<div class="advantages__text">
+											<p>Все транзакции по платежам теперь находятся в одном месте. Теперь продавец получает выплаты на разные кошельки и не беспокоится о просадке трафика.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- instructions -->
+					<section class="instructions">
+						<div class="instructions__container">
+							<div class="instructions__title title">
+								<h4>Пошаговая инструкция для запуска чат-бота:</h4>
+							</div>
+							<ol class="instructions__list">
+								<li class="instructions__item">Запускаем бота в телеграмме</li>
+								<li class="instructions__item">Добавляем свой крипто кошелек</li>
+								<li class="instructions__item">Тестируем бесплатно 5 дней</li>
+								<li class="instructions__item">Получаем оповещения о входящих и исходящих транзакциях</li>
+								<li class="instructions__item">Можем добавить чат-бота в группу и пригласить туда неограниченное кол-во человек, бот будет слать оповещения прямо туда</li>
+							</ol>
+							<div class="instructions__image-button">
+								<div class="instructions__image">
+									<div class="instructions__img"><picture><source srcset="img/instructions/instructions1.webp" type="image/webp"><img src="img/instructions/instructions1.jpg" alt="instructions" loading="lazy"></picture></div>
+									<div class="instructions__img"><picture><source srcset="img/instructions/instructions2.webp" type="image/webp"><img src="img/instructions/instructions2.jpg" alt="instructions" loading="lazy"></picture></div>
+									<div class="instructions__img"><picture><source srcset="img/instructions/instructions3.webp" type="image/webp"><img src="img/instructions/instructions3.jpg" alt="instructions" loading="lazy"></picture></div>
+								</div>
+								<a href="https://t.me/CoinsFlowBot" target="_blank" class="instructions__button button">НАЧАТЬ СЕЙЧАС</a>
+							</div>
+							<div class="instructions__paragraph paragraph">
+								<p><a href="https://t.me/CoinsFlowBot" target="_blank" class="paragraph__link">@CoinsFlowBot</a> предоставляет быстрый доступ к балансу кошелька и автоматически отправляет уведомления в чат. Бот зарекомендовал себя настоящим помощником в мире виртуальных валют и отслеживает входящие и исходящие платежи уже 13789 пользователей!</p>
+							</div>
+						</div>
+					</section>
+					<!-- examples -->
+					<section class="examples">
+						<div class="examples__container">
+							<div class="examples__title title">
+								<h4>Реальные примеры: как и кому @CoinsFlowBot помогает в работе:</h4>
+							</div>
+							<div class="examples__info">
+								<div class="examples__text">
+									<p><span>Платформа Ecommerce</span> - продавец, который принимает выплаты на разные кошельки и теперь может вовремя получать оповещения обо всех денежных операциях без посредников.</p>
+								</div>
+								<div class="examples__text">
+									<p><span>Частный трейдер</span> - обычный пользователь, который зарабатывает деньги на торговле криптовалютой. Больше не нужно нанимать посредников или тратить время на отслеживание транзакций во избежании утечки бюджета - все операции и баланс теперь доступны в одном месте.</p>
+								</div>
+								<div class="examples__text">
+									<p><span>МедиаБайер/трафик менеджер</span> - теперь трейдер, который получает выплаты от партнерок может не беспокоиться о безопасности операций и точно знать, когда и какая сумма поступила на счет. Это помогает автоматизировать работу команды в целом и быстро закидывать на трафик оставшуюся крипто валюту.</p>
+								</div>
+								<div class="examples__text">
+									<p><span>Овнер команды/компании</span>, у которого финансист распоряжается крипто кошельком, делает с него разные выплаты и принимает оплаты. Теперь есть одна группа на всех вовлеченных участников, где все видят все движения по кошельку.</p>
+								</div>
+							</div>
+							<div class="examples__paragraph paragraph">
+								<p>Не упусти свою возможность, пока она не ушла! Автоматизируй работу своей команды с помощью <a href="https://t.me/CoinsFlowBot" target="_blank" class="paragraph__link">@CoinsFlowBot</a> и следи за передвижением виртуальной валюты в одном месте. Это сократит нагрузку на каждого трейдера и поможет повысить трафик.</p>
+							</div>
+						</div>
+					</section>
+					<!-- comments -->
+					<section class="comments">
+						<div class="comments__container">
+							<div class="comments__title title">
+								<h4>КОММЕНТАРИЙ</h4>
+							</div>
+							<form class="add-comment" action="#">
+								<div class="add-comment__thanks-text-area">
+									<textarea class="add-comment__text-area" name="text" placeholder="Введите текст"></textarea>
+									<div class="add-comment__thanks">Сообщение на модерации, спасибо!</div>
+								</div>
+								<button class="add-comment__button" type="button">Отправить</button>
+							</form>
+							<ul class="comment-list">
+								<li class="comment">
+									<picture><source srcset="img/comments/comment_one.webp" type="image/webp"><img class="comment__photo" src="img/comments/comment_one.jpg" alt="photo" loading="lazy"></picture>
+									<div class="comment__body">
+										<div class="comment__text">
+											<p>"На вечеринке мой друг рассказал мне о @CoinsFlowBot. Я воспользовался его секретом и решил попробовать, и теперь пока другие тратят деньги на финансистов и теряют трафик, я сам слежу за всеми платежами и не беспокоюсь что могу пропустить информацию о входящем переводе!".</p>
+										</div>
+										<div class="comment__name-country">Марк Вебер, Германия</div>
+									</div>
+								</li>
+								<li class="comment">
+									<picture><source srcset="img/comments/comments_two.webp" type="image/webp"><img class="comment__photo" src="img/comments/comments_two.jpg" alt="photo" loading="lazy"></picture>
+									<div class="comment__body">
+										<div class="comment__text">
+											<p>"Всего за 1 месяц с @CoinsFlowBot я сэкономил очень много времени. Поскольку я могу отслеживать все денежные операции в одном чате в телеграмме, я путешествую по миру и больше не беспокоюсь о том, что что-то пойдет не так. Я всё контролирую".</p>
+										</div>
+										<div class="comment__name-country">Саиди Слиман, Алжир</div>
+									</div>
+								</li>
+								<li class="comment">
+									<picture><source srcset="img/comments/comments_three.webp" type="image/webp"><img class="comment__photo" src="img/comments/comments_three.jpg" alt="photo" loading="lazy"></picture>
+									<div class="comment__body">
+										<div class="comment__text">
+											<p>"Раньше я никогда не занимался крипто торговлей, но решил попробовать и не пожалел. Мне важно, чтобы все платежи и переводы по моему счету были максимально прозрачными. Удобно,что баланс я смогу смотреть прямо в чат-боте. Это гениально!”.</p>
+										</div>
+										<div class="comment__name-country">Инмакулада Мельгар Пальма, Испания</div>
+									</div>
+								</li>
+								<li class="comment">
+									<picture><source srcset="img/comments/comments_four.webp" type="image/webp"><img class="comment__photo" src="img/comments/comments_four.jpg" alt="photo" loading="lazy"></picture>
+									<div class="comment__body">
+										<div class="comment__text">
+											<p>"Я наконец-то смог конролировать свои расходы. Больше мне не нужно каждый день заходить на сайт, и проверять историю операций! Это упростило работу моей овнер команды и теперь обо всех транзакциях мне сообщают первым!”</p>
+										</div>
+										<div class="comment__name-country">Франс Буа, Франция</div>
+									</div>
+								</li>
+								<li class="comment">
+									<picture><source srcset="img/comments/comments_five.webp" type="image/webp"><img class="comment__photo" src="img/comments/comments_five.jpg" alt="photo" loading="lazy"></picture>
+									<div class="comment__body">
+										<div class="comment__text">
+											<p>"Я работаю с @CoinsFlowBot Всего 15 дней, и полностью довольна результатом. теперь я слежу за всеми денежными переводами в одном месте, заню, когда, и что пришло, и могу быстро закинуть свободные деньги обратно на трафик."</p>
+										</div>
+										<div class="comment__name-country">Мария Хесус Фернандо, Испания</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230714172749"></script>
+</body>
+
+</html>
